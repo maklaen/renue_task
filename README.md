@@ -1,6 +1,6 @@
 
 # Инструкция
-___
+
 1. Клонировать проект
 2. mvn package
 3. запустить jar with dependencies файл
