@@ -199,7 +199,7 @@ public class Main {
             }
 
         } catch (FileNotFoundException e) {
-            throw new UncheckedIOException("Файл " + file + " не найден!", e);
+            throw new UncheckedIOException("Файл " + file + " в папке с .jar файлом не найден!", e);
         } catch (IOException e) {
             throw new UncheckedIOException("Ошибка при работе с " + file + " файлом", e);
         }
