@@ -107,8 +107,10 @@ public class Main {
         // Отсутствие параметров запуска, берем настройки по умолчанию
         if (args.length < 1) {
             column = selectColumnFromYamlFile(applicationYmlFile);
-        } else {
+        } else if (args.length == 1){
             // Иначе берем из настроек
+            column = Integer.parseInt(args[0]) - 1;
+        } else {
             column = Integer.parseInt(args[1]) - 1;
         }
 
